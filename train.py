@@ -35,6 +35,6 @@ print ("Training faces. It will take a few seconds. Wait ...")
 faces,ids = Images_And_Labels(path)
 recognizer.train(faces, np.array(ids))
 
-recognizer.write('trainer.yml')  # Save the trained model as trainer.yml
+recognizer.write('model.yml')  # Save the trained model as trainer.yml
 
 print("Model trained, Now we can recognize your face.")
